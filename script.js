@@ -14,7 +14,7 @@ grd.addColorStop(1, "#00111e")
 
 let numStars = 600
 let stars = []
-let size = .1
+let size = .4
 let speed = .2
 let accelerate
 
