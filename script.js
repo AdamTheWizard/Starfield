@@ -6,7 +6,7 @@ canvas.height = 400
 
 const ctx = canvas.getContext("2d")
 
-var grd = ctx.createLinearGradient(0, 0, 0, canvas.height);
+let grd = ctx.createLinearGradient(0, 0, 0, canvas.height)
 grd.addColorStop(0, "#00111e")
 grd.addColorStop(.5, "#033d5e")
 grd.addColorStop(1, "#00111e")
