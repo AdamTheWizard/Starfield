@@ -1,3 +1,3 @@
 # Starfield
 A moving starfield built with canvas and JS
-[Here's a working demo: ](https://adamthewizard.github.io/Starfield/)
+See a working demo here: [Here](https://adamthewizard.github.io/Starfield/)
