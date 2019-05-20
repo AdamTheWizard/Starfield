@@ -22,8 +22,8 @@ canvas.onmouseenter = function(){
     // clearInterval(decelerate)
     accelerate = setInterval(function() {
 
-        if (speed < 250) {
-            speed += 5
+        if (speed < 150) {
+            speed += 3
             console.log(speed)
         }
 
