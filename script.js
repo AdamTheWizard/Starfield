@@ -2,11 +2,11 @@
 
 const canvas = document.getElementById("myCanvas")
 canvas.width = window.innerWidth
-canvas.height = 400
+canvas.height = window.innerHeight
 
 const ctx = canvas.getContext("2d")
 
-let grd = ctx.createLinearGradient(0, 0, 0, canvas.height)
+var grd = ctx.createLinearGradient(0, 0, 0, canvas.height);
 grd.addColorStop(0, "#00111e")
 grd.addColorStop(.5, "#033d5e")
 grd.addColorStop(1, "#00111e")
@@ -15,15 +15,15 @@ grd.addColorStop(1, "#00111e")
 let numStars = 600
 let stars = []
 let size = .4
-let speed = .2
+let speed = 1
 let accelerate
 
 canvas.onmouseenter = function(){
     // clearInterval(decelerate)
     accelerate = setInterval(function() {
 
-        if (speed < 35) {
-            speed += .5
+        if (speed < 250) {
+            speed += 5
             console.log(speed)
         }
 
@@ -35,7 +35,7 @@ canvas.onmouseenter = function(){
 
 canvas.onmouseleave = function() {
     clearInterval(accelerate)
-    speed = .1
+    speed = 1
     console.log("left")
     // let decelerate = setInterval(function() {
     //     speed -= .2
