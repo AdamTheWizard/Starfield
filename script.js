@@ -13,6 +13,12 @@ grd.addColorStop(1, "#00111e")
 
 
 let numStars = 600
+function reduceStars(){
+    if (window.innerWidth < 500){
+        numStars = 100
+    }
+}
+reduceStars()
 let stars = []
 let size = .4
 let speed = 1
